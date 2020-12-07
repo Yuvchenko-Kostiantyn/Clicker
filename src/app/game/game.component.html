@@ -1,0 +1,23 @@
+<div id="main-body">
+    <div>
+        <app-left
+            (buttonClick)="onStartClick()"
+            [name]="playerName"
+            [isGameOn]="isGameOn"
+            [isGameOver]="isGameOver"
+            [countdown]="countdown"
+            [clickCount]="clickCount"
+        ></app-left>
+        <app-right
+            (reset)="resetGame()"
+            (radioChange)="setCountdownTimer($event)"
+            [isGameOn]="isGameOn"
+            [isGameOver]="isGameOver"
+            [resultMessage]="resultMessage"
+            [playerName]="playerName"
+        ></app-right>
+    </div>
+    <a routerLink="/score">See score table</a>
+</div>
+
+

@@ -1,0 +1,8 @@
+<h2>Table of scores for players</h2>
+<div *ngFor='let key of keys'>
+    <app-table     
+    [tableData]="tableData"
+    [tableKey]="key"
+    ></app-table>
+</div>
+<a routerLink="/game">Back to game</a>

@@ -1,0 +1,18 @@
+:host{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #main-body{
+    display: flex;
+    flex-direction: column;
+    div{
+      display: flex;
+    }
+
+    a{
+      text-align: center;
+    }
+  }
+}

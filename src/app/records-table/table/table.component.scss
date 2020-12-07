@@ -1,0 +1,18 @@
+:host{
+    div{
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    table{
+        width: 50%;
+        border-collapse: collapse;
+        td{
+            border: 1px solid black;
+            padding: 5px;
+
+            &:first-child{
+                width: 20px;
+            }
+        }
+    }
+}

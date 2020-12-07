@@ -1,0 +1,6 @@
+<div id="left">
+    <h2>Hello, {{name}}</h2>
+    <p>You have made {{clickCount}} clicks</p> 
+    <button (click)="onButtonClick()" [disabled]="isGameOver">Click to {{!isGameOn? buttonValues.start : buttonValues.count}}</button>
+    <p>Timer: {{countdown}} seconds</p>
+</div>

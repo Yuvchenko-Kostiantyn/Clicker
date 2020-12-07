@@ -1,0 +1,28 @@
+<div id="right">
+    <form (change)="onCountdownChange()"> 
+        <div>
+            <label for="five">5 sec</label>
+            <input type="radio" name="countdown" value="5" [(ngModel)]="radioValue" [disabled]="isGameOn">
+        </div>
+        
+        <div>
+            <label for="ten">10 sec</label>
+            <input type="radio" name="countdown" value="10" [(ngModel)]="radioValue" [disabled]="isGameOn">
+        </div>
+        <div>
+            <label for="fifteen">15 sec</label>
+            <input type="radio" name="countdown" value="15" [(ngModel)]="radioValue" [disabled]="isGameOn">
+        </div>
+    </form>
+
+    <div class="buttons">
+        <button (click)="onReset()" [disabled]="isGameOn && !isGameOver">Reset</button>
+        <button (click)="onChangeName()" [disabled]="isGameOn && !isGameOver">Change Name</button>
+    </div>
+
+    <p>Your highest score for {{radioValue}} seconds is {{previousScore}}</p>
+
+    <p class="result-message" *ngIf="resultMessage && isGameOver">{{resultMessage}}</p>
+    
+    <p></p>
+</div>

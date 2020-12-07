@@ -1,0 +1,10 @@
+<div>
+    <h3>Records table for number of clicks in {{timeValue}} seconds</h3>
+    <table>
+        <tr *ngFor="let score of sortedData; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{score[0]}}</td>
+            <td>{{score[1]}}</td>
+        </tr>
+    </table>
+</div>

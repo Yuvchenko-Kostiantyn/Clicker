@@ -1,0 +1,8 @@
+<form>
+    <label for="name">
+        <h2>What is your name?</h2>
+    </label>
+    <input type="text" [(ngModel)]="nameInput" name="name" minlength="4" required>
+    <p class="error-message" *ngIf="invalidInput">Name field can not be empty</p>
+    <button type="button" (click)="saveAndPlay()">Play the game</button>
+</form>
