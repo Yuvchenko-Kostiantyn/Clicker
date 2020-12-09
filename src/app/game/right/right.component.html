@@ -20,7 +20,7 @@
         <button (click)="onChangeName()" [disabled]="isGameOn && !isGameOver">Change Name</button>
     </div>
 
-    <p>Your highest score for {{radioValue}} seconds is {{previousScore}}</p>
+    <p>Your highest score for {{radioValue}} seconds is {{previousScore? previousScore : 0}}</p>
 
     <p class="result-message" *ngIf="resultMessage && isGameOver">{{resultMessage}}</p>
     

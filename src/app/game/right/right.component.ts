@@ -37,6 +37,7 @@ export class RightComponent implements OnInit {
   }
 
   onReset(): void {
+    this.updatePreviousScore();
     this.reset.next('reset');
   }
 
